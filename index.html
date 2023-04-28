@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chart JS Multiple Lines Example</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="tid-bit">
+        Compare Free Cash Flow with Stock Based Compensation!
+      </h4>
+      <header>
+        <div class="header-box">
+          <h1 class="page-title">baioCharts</h1>
+          <input
+            id="input"
+            type="text"
+            onfocus="this.value=''"
+            value="Enter stock symbol..."
+          />
+          <button id="btn1" style="vertical-align: middle">
+            <span>Submit </span>
+          </button>
+          <div class="elements"></div>
+        </div>
+      </header>
+
+      <div class="hidden">
+        <h2 class="stock-ticker"></h2>
+        <div class="phppot-container">
+          <canvas id="line-chart"></canvas>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    </div>
+  </body>
+</html>
+<script src="script-test.js"></script>

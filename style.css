@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+}
+
+body {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+.tid-bit {
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: lighter;
+  background-color: rgb(34, 48, 97);
+  height: 25px;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(49, 75, 167);
+  height: 60px;
+  gap: 5px;
+}
+.elements {
+  margin-right: 20px;
+}
+.page-title {
+  font-size: 40px;
+}
+
+#btn1 {
+  display: inline-block;
+  font-kerning: normal;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  padding: 7px 10px;
+  width: 90px;
+  color: rgb(31, 31, 31);
+  background-color: rgb(231, 192, 62);
+  transition: all 0.5s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btn1 span:after {
+  content: "\00bb";
+  position: absolute;
+  padding-right: 12px;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btn1:hover span {
+  padding-right: 25px;
+}
+
+#btn1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#btn1:active {
+  transform: translateY(6px);
+  transition: 0.2s;
+}
+
+#btn1:hover {
+  cursor: pointer;
+}
+
+.stock-ticker {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #a1a1a1 solid 1px;
+  color: black;
+  padding: 7px;
+  font-size: 16px;
+}
+
+.phppot-container {
+  position: relative;
+  height: 70vh;
+  width: 140vh;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: #a1a1a1 solid 1px;
+}
+
+.hidden {
+  display: none;
+}
